@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "scope": "Retrospective exact finite audit; not original I42 verifier or a production theorem",
+  "bounds": {
+    "content_max": 400,
+    "primitive_c_d_max": 50,
+    "scale_max": 400,
+    "R": [
+      2,
+      3,
+      4
+    ]
+  },
+  "counts": {
+    "content": 400,
+    "fixed_allocation": 2468,
+    "primitive_rays": 1547,
+    "ray_scale_states": 618800,
+    "multi_mobius_sign": 36504,
+    "liouville_sign": 12168,
+    "abel": 1030
+  },
+  "generated_panel": [
+    {
+      "law": "unsigned",
+      "coefficient": [
+        2.0,
+        0.0
+      ],
+      "energy": 4,
+      "diagonal": 12
+    },
+    {
+      "law": "mu",
+      "coefficient": [
+        0.0,
+        -2.0
+      ],
+      "energy": 4,
+      "diagonal": 8
+    },
+    {
+      "law": "mu_squared",
+      "coefficient": [
+        4.0,
+        0.0
+      ],
+      "energy": 16,
+      "diagonal": 8
+    },
+    {
+      "law": "lambda",
+      "coefficient": [
+        -2.0,
+        -2.0
+      ],
+      "energy": 8,
+      "diagonal": 12
+    },
+    {
+      "law": "square",
+      "coefficient": [
+        -1.0,
+        0.0
+      ],
+      "energy": 1,
+      "diagonal": 5
+    },
+    {
+      "law": "mu_2a_square",
+      "coefficient": [
+        -1.0,
+        0.0
+      ],
+      "energy": 1,
+      "diagonal": 1
+    }
+  ],
+  "hostile_witnesses": {
+    "radical_is_not_parity_kernel": true,
+    "omit_coprimality": true,
+    "one_mobius_not_two": true,
+    "lambda_not_mobius": true,
+    "square_indicator_not_mu_squared": true,
+    "mask_revives_nonsquare": true,
+    "phase_revives_nonsquare": true,
+    "principal_mode_not_diagonal": true,
+    "illustrative_scale_source_substitution": true,
+    "filtered_left_boundary_required": true,
+    "incomplete_fixed_allocation": true,
+    "nonunit_scale_inverse_undefined": true
+  },
+  "hostile_count": 12,
+  "filtered_boundary_witness": {
+    "interval": [
+      5,
+      7
+    ],
+    "eligible_positions": [
+      5,
+      7
+    ],
+    "weights": [
+      1,
+      1
+    ],
+    "F_left": 1,
+    "F_right": -1,
+    "correct_sum": -2,
+    "omit_left_boundary_sum": -1
+  },
+  "mapping_witness_scope": "Illustrative scalar substitution only; no native source mapping is certified"
+}

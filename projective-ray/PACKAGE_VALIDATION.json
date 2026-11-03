@@ -1,0 +1,19 @@
+{
+  "revision": 3,
+  "clean_extract_rerun": "PASS",
+  "optimized_modes": {
+    "-O": {
+      "status": "REJECTED_AS_REQUIRED",
+      "exit_code": 1,
+      "result_unchanged": true
+    },
+    "-OO": {
+      "status": "REJECTED_AS_REQUIRED",
+      "exit_code": 1,
+      "result_unchanged": true
+    }
+  },
+  "privacy_scan": "PASS",
+  "privacy_scope": "Packaged text and DOCX XML scanned for personal absolute paths, private conversation links, account/file IDs, and removed personal salutation.",
+  "rendered_pages_inspected": 10
+}

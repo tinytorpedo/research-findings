@@ -1,0 +1,146 @@
+SOURCE TRANSCRIPTION
+Complete text extraction of the three-page Further paper applications addendum, 7 October 2026. The personal salutation is replaced with a marked omission; page breaks are labeled. Mathematical text is preserved as extracted. This is not a byte-identical PDF. The conditional statements and reported checks are source claims, not a fresh proof audit.
+
+Further paper applications
+Research addendum [personal salutation omitted] · 7 October 2026
+
+The useful outcome is three explicit tests for whether the paper estimates can reach the actual
+weighted sums. The algebra is exact; the asymptotic gains still depend on the manuscripts and on
+matching the native objects to their hypotheses.
+
+1 Measure the missing endpoint component
+For the dilation-graph route, average the first endpoint over each mark fiber and keep the residual.
+The paper estimate controls the average only under its stated hypotheses; a separate norm budget
+controls the residual. This turns endpoint independence into a measurable application gate.
+
+2 Charge weights without discarding masks
+For fixed affine Liouville correlations, exact summation by parts charges the full variation of the
+weight. Expand a genuinely fixed wheel into progressions first to avoid paying for every wheel
+transition. This provides a conditional route for structured weights, but unrestricted bounded masks
+can destroy cancellation.
+
+3 Group complete weights before taking variation
+For the quasi-RH route, combine signed pieces and complete partitions before taking absolute
+values. Restrict to the true support of the character and retain both interval boundaries. This can
+remove artificial variation costs while preserving real arithmetic-mask jumps. The attached
+technical note records the exact budget and remaining analytical assumptions.
+
+What this unlocks next
+A complete nonzero native identity can now be tested against explicit endpoint, variation, modulus
+and aggregation budgets. A toy pass is not a native theorem application. A single-factor Liouville
+sum is not automatically a two-point correlation.
+Status: Exact identities and small synthetic checks completed. Manuscript proof audits and scale-uniform estimates
+are not certified. Native I112 remains BLOCKED_UNRUN; no user-computer execution or native weighted fixture is
+represented here.
+
+Paper applications addendum | 7 October 2026
+
+1
+
+
+--- Page boundary ---
+Dilation and affine gates
+Fiber projection and residual budget
+Let P average over each nonempty physical mark fiber, with the paper-defined equal state masses.
+Write f⊥ = f − Pf. The projection decomposition is exact. Conditional on the physical-graph
+hypotheses and the transference estimate applying to Pf and g:
+|(f, Ag)| ≤ C X L−E+2C3 + LCabs ‖f⊥‖ ‖g‖.
+Here L = log x and the row and column bound gives ‖A‖ ≤ LCabs. If ‖f⊥‖ ≤ εX X1/2LC3 and ‖g‖ ≤
+X1/2LC3, sufficient gates for O(XL−κ) are E ≥ κ + 2C3 and εX = O(L−κ−Cabs−2C3). These are sufficient,
+not necessary.
+The actual physical measure, symmetrized operator, damping, phases, shared labels and exclusions
+must match. The ideal hypothesis is a supremum over phase-dependent operator norms. Neither a
+scalar mean nor testing only one phase can certify it. Integer-position masks preserve mark
+independence; mark-list masks generally do not.
+
+Fixed affine forms and full variation
+Set s(n) = λ(a₁n+b₁)λ(a₂n+b₂), with fixed positive integer slopes, nonnegative integer offsets and
+a₁b₂ − a₂b₁ ≠ 0. For integer L ≤ U define SL(v) = Σn=Lvs(n) and V(w) = |w(U)| +
+Σn=LU−1|w(n+1)−w(n)|. Then exactly:
+Σ w(n)s(n) = w(U)SL(U)
+
++ Σn=LU−1(w(n)−w(n+1))SL(n).
+Thus |Σ ws| ≤ V(w) max |SL|. Conditional on the affine manuscript, the prefix maximum is bounded
+by min{U−L+1, C′tuple U/(log U)c} for sufficiently large U. On [1,U], V(w) = o((log U)c) suffices for
+o(U); this does not imply cancellation relative to a short interval length.
+For a fixed wheel W, substitute n = Wm+r and sum the progression-wise variation budgets. Each
+progression has its own fixed-form constant and the m=0 term is handled separately. Growing W,
+growing form coefficients or many pieces require additional uniformity and the full aggregate cost.
+
+Paper applications addendum | 7 October 2026
+
+2
+
+
+--- Page boundary ---
+Grouped quasi RH gate
+Conditional prefix input
+Let f(n)=λ(n)χ₆(n), where χ₆(n)=1 when gcd(n,6)=1 and 0 otherwise, and F(t)=Σₙ≤ₜ f(n). The derived
+conditional input is |F(t)|≤Cε tᵅ, α=7/8+ε, with fixed 0<ε<1/8. It uses the manuscript's asserted
+zero-free half-plane and a separate zeta/Perron argument. It is not a quoted numerical theorem; Cε
+is unbound. The manuscript's Hecke lemma must not be relabeled as a Dirichlet-character lemma.
+
+Pool the actual signed weights
+Zero-extend every native contribution and set H(d)=Σᵣ cᵣ 1[d∈Iᵣ]Gᵣ(d). Keep all original parents,
+multiplicities, support, ownership and hit factors. A complete cover reconstructs its parent only
+when all children are summed. Removing selected children leaves a genuine selector weight.
+List eligible positions t₁<…<tₘ in a finite block containing the support; put hⱼ=H(tⱼ) and q₀=t₁−1. The
+exact global Abel identity is
+T = F(tₘ)hₘ − F(q₀)h₁ + Σⱼ<ₘ F(tⱼ)(hⱼ−hⱼ₊₁).
+Define Eα(h)=q₀ᵅ|h₁|+tₘᵅ|hₘ|+Σⱼ<ₘ tⱼᵅ|hⱼ−hⱼ₊₁|. Then |T|≤Cε Eα(h), conditionally. Signed pieces are
+combined inside each jump before taking absolute values. Both boundaries of every block must be
+paid; retain the unit at 1. Compression removes only the irrelevant χ₆-zero positions.
+
+The sufficient gate and its limits
+For an exact target Tₓ+Eₓ, the conditions Σblocks Eα(Hₓ)=o(X/log²X) and |Eₓ|=o(X/log²X) imply the
+desired small-o discrepancy, conditionally. Neither budget is proved for I112. A finite calculation
+cannot certify the scale-uniform statement, and a favorable calculation with Cε=1 cannot replace an
+explicit valid constant.
+For a squarefree fixed P, pure roughness has an exact convolution identity: f(n) 1[gcd(n,P)=1]
+equals the sum of χ₆(d) f(n/d) over d dividing both P and n. Pool J(m) = Σ χ₆(d) H(dm) over divisors d
+of P. Alternatively, pay the truncated cost Wα(U,P) = Σ χ₆(d) d⁻ᵅ over d dividing P with d ≤ U.
+Growing-wheel cost can consume the power saving. Shifted endpoint masks and source-dependent
+restrictions remain in the full weight. No automatic transfer to I117's different divisor kernel follows.
+
+Paper applications addendum | 7 October 2026
+
+3
+
+
+--- Page boundary ---
+Evidence and reproduction
+What was checked exactly
+Dilation and affine controls: a two-state matrix kills the constant fiber vector but leaves an
+unprojected pairing of 1; a reciprocal-prime rank-one kernel has mean 0 and norm 6;
+repeated-prime congruences distinguish compatible from incompatible offsets. The Abel identity
+and bound pass on all 300 subintervals of the N=24 synthetic Liouville example.
+A decisive mask control uses s(n)=λ(n)λ(n+2) and w(n)=(1+s(n))/2. Exactly Σws=Σw=(N+Σs)/2. At
+N=24, the unweighted sum is −6, the selected count and weighted sum are 9, and V(w)=12.
+Conditional on the paper estimate, the selected sum is asymptotic to N/2, so an extension to all
+bounded binary masks is false.
+Grouped quasi-RH controls: 1,196 exact Abel/compression checks and 720 exact rough-convolution
+checks pass. At 40 eligible positions, grouping a complete partition gives variation 1 while the
+separate variations sum to 37. A genuine hit mask retains variation 15. Omitting the left boundary
+gives 0 instead of −1 for the one-point interval [5,5].
+
+Sources and scope
+All manuscript references use release commit adc7f1241b42e322a6451854ab7e4b4c146bf78a. The ZIP contains the
+full derivations, precise hypotheses, source links and inspection scope. These are conditional applications of claimed
+estimates; no independent manuscript proof validation or Lean build was performed.
+Weighted dilation graphs: definitions 3.1–3.3, lemma 3.4, theorem 3.5 and corollary 3.11.
+Ordinary two-point correlations: theorem 1.1; theorem 1.2 and corollary 1.3 distinguish the qualitative scope.
+Quasi-Riemann hypothesis manuscript: conditional analytical input; full theorem context and scope in the
+accompanying technical note.
+
+Reproducibility bundle
+Unzip the companion archive. Run python3 weighted_paper_bridge/check_bridges.py and python3
+qrh_grouped_gate/verify_gate.py from the extracted directory. Both use Python standard-library exact arithmetic and
+regenerate their JSON outputs. README.md describes the evidence boundary; SHA256SUMS records packaged file
+hashes.
+
+Paper applications addendum | 7 October 2026
+
+4
+
+
+--- Page boundary ---
