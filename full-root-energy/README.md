@@ -10,6 +10,8 @@ E_H(K,y),\ |R_{\mathrm{far}}(K,y)|
 $$
 uniformly for $y\leq\sqrt{6K}$. The result concerns the model and the masks defined below. The scope of this note ends at the energy estimate.
 
+The [variance transfer](variance-transfer.md) derives the conditional primorial-window variance limit from this energy bound.
+
 ## Energy and notation
 
 Let
