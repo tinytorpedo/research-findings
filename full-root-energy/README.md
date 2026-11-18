@@ -97,7 +97,7 @@ In a remaining box with $B<T$, we have $b\le2T$, which implies $a\gg\sqrt K/(\el
 
 Restrict the oscillatory calculation to $\omega(a),\omega(b)\le100\log\ell$. The omitted weights have mass $\ll_j\ell^{2j-100\log 2}$ under $\alpha_j$, by weighting the Euler product with $2^{\omega}$. Combined with the root-pair bound, this gives a negligible weighted norm for the excluded $a$ and $b$ tails.
 
-For the matrix with rows indexed by $b$ and columns by $c$, the kernel is $e_{15ab}(rJ_b\bar c)$ on units. The row correlation for distinct $b=gu$ and $b'=gv$, $g=(b,b')$, is an interval sum of $e_L(n\bar c)$ on units, where
+Use rows $b$ coprime to $a$ and the unweighted dyadic column interval $I=(C,2C]\cap\mathbb Z$. Set $M_{b,c}=e_{15ab}(rJ_b\bar c)$ when $(c,15ab)=1$ and set it to zero otherwise. The physical weights and row-dependent interval masks are applied after estimating this matrix. The row correlation for distinct $b=gu$ and $b'=gv$, $g=(b,b')$, is an interval sum of $e_L(n\bar c)$ on units, where
 $$
 L=15aguv,\qquad n=r(J_bv-J_{b'}u).
 $$
@@ -105,16 +105,74 @@ The factors $15ag,u,v$ are pairwise coprime and squarefree, and
 $$
 (n,uv)=(r,uv),\qquad (n,15ag)=(r(v-u),15ag).
 $$
-Let $q_1\mid u$ and $q_2\mid v$, and set $q=L/(q_1q_2)$. Apply van der Corput twice, using shifts $h_1=j_1q_1$, $h_2=j_2q_2$ with $1\le j_1,j_2\le J=\lfloor\ell^{16P}\rfloor$. Assume $J\max(q_1,q_2)\ll C$. At the second stage the phase modulo $q_1q_2$ cancels, and the surviving phase modulo $q$ is the mixed difference of $n\overline{q_1q_2}\bar c$. For $p\mid q$ with $p\nmid n j_1j_2$, this rational function has a simple pole. If $h_1+h_2\ne0\bmod p$, the pole from the unshifted inverse is unique. If $h_1+h_2=0\bmod p$, the poles at the two nonzero shifts are distinct because $p$ is odd. The same simple pole persists under any additive Fourier twist.
+### The two shift inequalities
 
-Modulo each prime of $q_1q_2$, the four shifts yield at most two forbidden unit classes. Inclusion–exclusion introduces at most $3^{\omega(q_1q_2)}$ progressions with moduli dividing $q_1q_2$ and coprime to $q$. On each progression complete the interval sum modulo $q$, including the zero Fourier term. CRT and the rational-function Weil bound give the following bound for the twice-shifted sum, with $P$ large enough:
+Let $z(c)=e_L(n\bar c)$ when $c\in I$ and $(c,L)=1$, with $z(c)=0$ elsewhere. Put $S=\sum_c z(c)$. For a function $f$ of modulus at most 1 supported on an integer interval of length $O(C)$, write $S_f=\sum_c f(c)$. If the shift step is $d_0$ and $Jd_0\ll C$, then
 $$
-\ell^P\sqrt{(q,n j_1j_2)}
- \left(\frac C{\sqrt q}+\sqrt q\right).
+J S_f=\sum_c\sum_{i=1}^{J} f(c+i d_0).
 $$
-At a prime dividing $n j_1j_2$ use the trivial complete bound $p$. All local factors, inclusion–exclusion factors and the completion logarithm fit within $\ell^P$ since $\omega(L)\le 300\log\ell+2$. The two applications of the shift inequality bound the original correlation divided by $C$ by $O(J^{-1/4}+\varepsilon^{1/4})$ when the twice-shifted bound is at most $C\varepsilon$. This follows by applying the usual Cauchy–Schwarz shift bound on the intersection intervals at each stage. [Arithmetic differencing](https://arxiv.org/html/1403.8031) · [Rational-function Weil bound, Theorem 1.1](https://www.math.ksu.edu/~cochrane/research/stepmix.pdf)
+The outer support has size $O(C)$. Cauchy–Schwarz bounds $J^2|S_f|^2$ by $O(C)$ times the sum of squares of the inner sums. Expanding those squares gives
+$$
+\frac{|S_f|^2}{C^2}\ll
+ \frac1J+\frac1J\sum_{j=1}^{J-1}
+ \frac{\left|\sum_c f(c+j d_0)\overline{f(c)}\right|}{C}.
+$$
+The diagonal contributes $J\sum_c |f(c)|^2\ll JC$. The correlation at shift $j d_0$ occurs with multiplicity $J-j$ before taking absolute values.
 
-Set $G=\ell^{16P}$. For fixed $b$, the rows with $g>G$ or $(15ag,n)>G$ number at most $O(\ell^P(BH/G+1))$. The first case uses the count of multiples of each divisor $g>G$ of $b$. In the second, for each $g\mid b$ and $d\mid 15ag$ with $d>G$, the condition $d\mid r(v-u)$ restricts $v$ to a class modulo $d/(d,r)>G/H$. This count covers the exceptional pairs using the trivial $O(C)$ correlation. The diagonal costs $O(C)$. If the other pairs have twice-shifted bounds $O(C\ell^{-16P})$, the Schur bound on the Gram matrix gives matrix norm $O(\sqrt{BC}\,\ell^{-2P})$. Apply the original masks as above and use $\ell^2$ norms of the weights bounded by $O(\ell^4/\sqrt B)$ and $O(\ell^4/\sqrt C)$. The masks, variation, frequencies and dyadic summation cost a fixed power of $\ell$, which can be absorbed in the choice of $P$. The resulting row estimate is $O(\ell^{-P})$.
+Take $q_1\mid u$, $q_2\mid v$, and write $Q_0=q_1q_2$ and $q=L/Q_0$. Assume $J\max(q_1,q_2)\ll C$, with $J=\lfloor\ell^{16P}\rfloor$. Apply the inequality first with $f=z$ and $d_0=q_1$. For $h_1=j_1q_1$, the first correlation is the sum of
+$$
+z_{h_1}(c)=z(c+h_1)\overline{z(c)}
+$$
+over $I\cap(I-h_1)$. Apply the inequality again to $z_{h_1}$ with $d_0=q_2$, using the same ambient scale $C$ even if the intersection is short. For $h_2=j_2q_2$ the second correlation is
+$$
+S_2(j_1,j_2)=\sum_c z_{h_1}(c+h_2)\overline{z_{h_1}(c)}.
+$$
+Its interval is $I\cap(I-h_1)\cap(I-h_2)\cap(I-h_1-h_2)$. The term is supported where all four shifted arguments are units modulo $L$. If $|S_2(j_1,j_2)|\ll C\varepsilon$ throughout, the second inequality bounds the normalized first correlations by $O((J^{-1}+\varepsilon)^{1/2})$. Substituting that result into the first inequality gives $|S|/C\ll J^{-1/4}+\varepsilon^{1/4}$. [Arithmetic differencing](https://arxiv.org/html/1403.8031)
+
+### Completion on the remaining modulus
+
+Write $\mathcal H=\{0,h_1,h_2,h_1+h_2\}$ for the offsets in the unit conditions. The second correlation has positive reciprocal terms at $0$ and $h_1+h_2$ and negative terms at $h_1$ and $h_2$, with multiplicities included. The component at $q_1$ vanishes because $h_1$ is a multiple of $q_1$. The component at $q_2$ vanishes because $h_2$ is a multiple of $q_2$. By CRT the exponential on the remaining modulus is $e_q(n\overline{Q_0}\Delta_q(c))$, where
+$$
+\Delta_q(c)=\overline{c+h_1+h_2}-\overline{c+h_1}
+-\overline{c+h_2}+\bar c\pmod q
+$$
+on the four $q$-unit arguments.
+
+For each $p\mid Q_0$ the four unit conditions exclude the classes $\{-h\bmod p:h\in\mathcal H\}$, at most two distinct classes because one shift is zero modulo $p$. Expanding the product of the allowed-class indicators gives at most $3^{\omega(Q_0)}$ signed progressions $c=c_0+dt$ with $d\mid Q_0$ and $(d,q)=1$. On each such progression define the $q$-periodic function $\Phi(t)=e_q(n\overline{Q_0}\Delta_q(c_0+dt))$ on the four $q$-unit arguments and set it to zero elsewhere. Let $I_d$ denote the integer interval in $t$ cut out by the four original intervals. Then $|I_d|=O(C/d+1)$. With
+$$
+\widehat\Phi(k)=\sum_{t\bmod q}\Phi(t)e_q(-kt),
+$$
+the sum on this progression is exactly
+$$
+\frac1q\sum_{k\bmod q}\widehat\Phi(k)\sum_{t\in I_d}e_q(kt).
+$$
+The zero Fourier mode contributes $|I_d|/q$ to the normalized sum of the absolute interval coefficients. For $0<k<q$, geometric summation bounds the interval coefficient by $O(q/\min(k,q-k))$. Hence the normalized sum over all modes is $O(C/(dq)+\log(2q))$.
+
+Because $q$ is squarefree, CRT factors $\widehat\Phi(k)$ into prime-modulus sums. At $p\mid q$ with $p\nmid nj_1j_2$, both shifts are nonzero modulo $p$. If $h_1+h_2\ne0\bmod p$, the unshifted reciprocal has a unique pole. If $h_1+h_2=0\bmod p$, the two nonzero shifts give distinct poles since $p$ is odd. This simple pole persists under the invertible affine change $c=c_0+dt$ and the linear Fourier twist. It verifies the nondegeneracy condition for the rational-function Weil bound. There are at most four simple finite poles and at most a simple pole at infinity, so the local bound is $O(\sqrt p)$ with an absolute constant. Any additional points excluded by the unit conditions cost at most four terms. At a prime dividing $nj_1j_2$ use the trivial bound $p$. Thus for an absolute $C_0$,
+$$
+|\widehat\Phi(k)|\ll C_0^{\omega(q)}\sqrt{q(q,nj_1j_2)}
+$$
+uniformly in $k$. [Rational-function Weil bound, Theorem 1.1](https://www.math.ksu.edu/~cochrane/research/stepmix.pdf)
+
+Summing the progression bounds and using $d\ge1$ gives
+$$
+|S_2(j_1,j_2)|\ll
+\ell^P\sqrt{(q,nj_1j_2)}
+\left(\frac C{\sqrt q}+\sqrt q\right).
+$$
+The fixed power $\ell^P$ absorbs the factors $3^{\omega(Q_0)}C_0^{\omega(q)}\log(2q)$ because $\omega(L)\le300\log\ell+2$ and $\log(2L)\ll\ell$. This choice is independent of the exponents in the shift and length thresholds.
+
+### From correlations to the matrix norm
+
+Set $G=\ell^{16P}$. For fixed $b$, the number of rows with $g>G$ or $(15ag,n)>G$ is $O(\ell^P(BH/G+1))$. The first count uses multiples in $(B,2B]$ of each divisor of $b$ exceeding $G$. For the second count, fix $g\mid b$ and a divisor $d>G$ of $15ag$. The condition $d\mid r(v-u)$ restricts $v$ to one class modulo $d/(d,r)>G/H$. There are at most $O(BH/(gG)+1)$ possibilities in the interval for $v$. The number of divisor choices is bounded by a fixed power of $\ell$ using the restrictions on $\omega(a)$ and $\omega(b)$.
+
+Bound the exceptional correlations and the diagonal by $O(C)$. If the other rows satisfy $|S_2|\ll C\varepsilon$, the absolute row sums of $MM^*$ give
+$$
+\frac{\|M\|_{\mathrm{op}}^2}{BC}
+\ll \frac1B+\ell^P\left(\frac HG+\frac1B\right)
+     +J^{-1/4}+\varepsilon^{1/4}.
+$$
+With $B\ge T=\ell^{80P}$ and $\varepsilon=\ell^{-16P}$, this yields $\|M\|_{\mathrm{op}}\ll\sqrt{BC}\,\ell^{-2P}$. Apply the original masks and the $\ell^2$ norms of the weights, bounded by $O(\ell^4/\sqrt B)$ and $O(\ell^4/\sqrt C)$. The mask decomposition, variation, frequencies and dyadic summation cost fixed powers of $\ell$ independent of $P$. Taking $P$ sufficiently large gives a row estimate of $O(\ell^{-P})$.
 
 ## The two applications of the correlation estimate
 
@@ -122,7 +180,7 @@ First use $q_1=u$, $q_2=v$, hence $q=15ag$. This applies to boxes with $C\ge T\m
 $$
 \ll \ell^P J\left(\sqrt{G/a}+G\frac{\sqrt a}{C}\right)\ll\ell^{-16P}.
 $$
-Here $a>Q$ exceeds every fixed power of $\ell$ eventually. The shift lengths are $O(JB)$ and fit in $O(C)$.
+For those pairs, $(q,nj_1j_2)\le GJ^2$ and $15a\le q\le15aG$, giving the two displayed terms. The first is smaller than any fixed inverse power of $\ell$ since $a>Q$. The second is $O(\ell^P JG/T)=O(\ell^{-47P})$. The shift lengths are $O(JB)$ and fit in $O(C)$.
 
 In all remaining boxes $c/b\ll T^2\ell^{258}$. If $C<TB$, use $c\le2C$ and $b>B$. If $C<T\sqrt a$, then $c/b=ac^2/(abc)\ll T^2 a^2\ell^2/K\ll T^2\ell^{258}$. For fixed $a$, this and the product window place $b$ in an interval within factors $\ell^{O(1)}$ of $\sqrt{K/a}$. There are $O(m)$ dyadic $b$ intervals, and the product window gives $O(m)$ mass for $c$ per $b$. Thus the remaining rows are $O(m^2)$.
 
@@ -133,7 +191,7 @@ $$
 \frac{\sqrt q}{C}\ll \ell\sqrt G\,\frac a{\sqrt K}e^{L_*/4}
  \le\ell\sqrt G\,e^{-3L_*/4}.
 $$
-The zero-mode part is small since $q\ge15a>15Q$. This gives the same $O(C\ell^{-16P})$ twice-shifted bound and negligible weighted norm.
+Again $(q,nj_1j_2)\le GJ^2$. After division by $C$, the part from $C/\sqrt q$ is $O(\ell^PJ\sqrt{G/a})$, which is smaller than any fixed inverse power of $\ell$. The part from $\sqrt q$ is $O(\ell^{33P+1}e^{-3L_*/4})$. Thus the shortened shifts give the same $O(C\ell^{-16P})$ bound for the twice-shifted sum and negligible weighted norm.
 
 ## Sifted factors and recombination
 
