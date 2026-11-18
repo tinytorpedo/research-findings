@@ -5,6 +5,10 @@
 - [Finite carrier energy](finite-carrier-energy/README.md): paper in PDF and DOCX, reproducibility audit, source transcriptions and exact finite checks.
 - [Compression transfer study](compression-transfer/README.md): phase-pair and ellipse paper, reported measurements, arithmetic audit and retained-artifact replay evidence.
 
+## Candidate research note
+
+- [Full-root energy bound](full-root-energy/README.md) — Candidate proof of a cutoff-uniform asymptotic bound for the signed off-diagonal sum. Independent review is pending.
+
 Existing root-level uploads are preserved. The organized folders provide the publication packets without removing that original upload. These are AI-assisted internal research materials; finite verification is not external peer review or a general production theorem.
 
 

@@ -29,6 +29,12 @@ for an inventory of the publication packets.
   The packet distinguishes the rerun accounting audit from the
   separately recorded replay of 37 retained-artifact decoding checks.
 
+## Candidate research note
+
+- [Full-root energy bound](full-root-energy/README.md) —
+  Gives a candidate asymptotic estimate for the signed off-diagonal sum
+  in a full-root twin-prime model. Independent review is pending.
+
 ## Scope of the evidence
 
 Exact finite results apply within the stated computational domains.
