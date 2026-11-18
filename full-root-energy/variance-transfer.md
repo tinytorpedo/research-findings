@@ -9,6 +9,10 @@ $$
 $$
 The argument below bounds the full mixed error and connects it to the exact variance decomposition. [Pinned variance note, §§7–10](https://github.com/solveathome/twin-primes/blob/c8fced6cac7008c4a5d06295db2b7dca1ed5eef3/paper/variance-note.md)
 
+## Source and credits
+
+This companion addresses Conjecture 1 in §10 of Solve at Home’s variance note. Chris Benjaminsen founded Solve at Home. The variance note credits him with directing and authorizing publication of its 27 September 2026 revisions and credits Codex with the related research, source checks, and edits. Its contribution record also identifies earlier contributors and preserves attribution for the original mathematical sources. [Conjecture 1](https://github.com/solveathome/twin-primes/blob/c8fced6cac7008c4a5d06295db2b7dca1ed5eef3/paper/variance-note.md#L788-L803) · [Variance note credits](https://github.com/solveathome/twin-primes/blob/c8fced6cac7008c4a5d06295db2b7dca1ed5eef3/paper/variance-note.md#L1-L9) · [Contribution record](https://github.com/solveathome/twin-primes/blob/c8fced6cac7008c4a5d06295db2b7dca1ed5eef3/research/RESEARCH-CONTRIBUTIONS-2026-09-27.md) · [Solve at Home launch post](https://benjaminsen.substack.com/p/lets-solve-the-twin-prime-conjecture)
+
 ## Exact mixed discrepancy
 
 Use $\alpha_j$, $D_y$, $F_N$, $B_s$, $A$, $Q$ and $H$ as defined in the energy note. In compressed lag coordinates $d=6h$, write $V(h)=15$ on $0\bmod5$, $15/2$ on $\pm1\bmod5$, and zero elsewhere. For a function $F$ on compressed lags put

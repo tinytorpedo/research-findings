@@ -8,6 +8,7 @@
 ## Candidate research note
 
 - [Full-root energy bound](full-root-energy/README.md) — Candidate proof of a cutoff-uniform asymptotic bound for the signed off-diagonal sum. Independent review is pending.
+  The [variance companion](full-root-energy/variance-transfer.md) addresses Conjecture 1 in the Solve at Home variance note. The source credits project founder Chris Benjaminsen with directing and authorizing publication of its September 2026 revisions. [Source credits](https://github.com/solveathome/twin-primes/blob/c8fced6cac7008c4a5d06295db2b7dca1ed5eef3/paper/variance-note.md#L1-L9)
 
 Existing root-level uploads are preserved. The organized folders provide the publication packets without removing that original upload. These are AI-assisted internal research materials; finite verification is not external peer review or a general production theorem.
 
